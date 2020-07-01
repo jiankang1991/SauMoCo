@@ -16,7 +16,7 @@ This repo contains the codes for the TGRS paper: .... We propose a new unsupervi
 
 ### Dataset
 
-* NAIP full scenes located in Central Valley areas near Fresno, California through the [USGS EarthExplorer](https://earthexplorer.usgs.gov/). The
+* **NAIP full scenes** located in Central Valley areas near Fresno, California through the [USGS EarthExplorer](https://earthexplorer.usgs.gov/). The
 geo-locations of the downloaded scenes are inside the
 orange rectangle in the following image. Then, we randomly select a total of 100,000 images (with a size of 250×250 pixels) from the downloaded tiles. Note NAIP is first utilized in [Tile2Vec](https://arxiv.org/abs/1805.02855) framework.
 
@@ -24,7 +24,7 @@ orange rectangle in the following image. Then, we randomly select a total of 100
 <img src="./Selection_004.png" alt="drawing" width="350"/>
 
 
-* Sentinel-2 tiles, we downloaded 100 Sentinel-
+* **Sentinel-2 tiles**, we downloaded 100 Sentinel-
 2 Level-1C image products which have been globally
 sampled from the entire globe. The following image illustrates the geo-locations of the downloaded Sentinel-2 products. Then, we select 100,000 random images (with a size of 264 × 264 pixels) from the downloaded products. The product IDs of these tiles can be found in [DSen2](https://github.com/lanha/DSen2).
 
@@ -56,4 +56,5 @@ After training the CNN models on the two created datasets by using SauMoCo, the 
 
 ## References
 [1] Jean, Neal, et al. "Tile2vec: Unsupervised representation learning for spatially distributed data." Proceedings of the AAAI Conference on Artificial Intelligence. Vol. 33. 2019.
+
 [2] He, Kaiming, et al. "Momentum contrast for unsupervised visual representation learning." arXiv preprint arXiv:1911.05722 (2019).
