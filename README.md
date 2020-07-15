@@ -4,7 +4,7 @@
 
 ---
 
-This repo contains the codes for the TGRS paper: .... We propose a new unsupervised deep metric learning model, called spatially augmented momentum contrast (SauMoCo), which has been specially designed to characterize unlabeled RS scenes. Based on the first law of geography, the proposed approach defines a spatial augmentation criteria to uncover semantic relationships among land cover tiles. Then, a queue of deep embeddings is constructed to enhance the semantic variety of RS tiles within the considered contrastive learning process, where an auxiliary CNN model serves as an updating mechanism. Some codes are modified from [CMC](https://github.com/HobbitLong/CMC) and [Tile2Vec](https://github.com/ermongroup/tile2vec).
+This repo contains the codes for the TGRS paper: [Deep Unsupervised Embedding for Remotely Sensed Images based on Spatially Augmented Momentum Contrast](https://ieeexplore.ieee.org/document/9140372) We propose a new unsupervised deep metric learning model, called spatially augmented momentum contrast (SauMoCo), which has been specially designed to characterize unlabeled RS scenes. Based on the first law of geography, the proposed approach defines a spatial augmentation criteria to uncover semantic relationships among land cover tiles. Then, a queue of deep embeddings is constructed to enhance the semantic variety of RS tiles within the considered contrastive learning process, where an auxiliary CNN model serves as an updating mechanism. Some codes are modified from [CMC](https://github.com/HobbitLong/CMC) and [Tile2Vec](https://github.com/ermongroup/tile2vec).
 
 ![alt text](./Selection_002.png)
 
@@ -32,6 +32,8 @@ sampled from the entire globe. The following image illustrates the geo-locations
 <img src="./Selection_003.png" alt="drawing" width="350"/>
 
 ### Training
+
+* `./data/npy2lmdb.py` is the script for transforming the 100,000 npy files into a big [LMDB](https://lmdb.readthedocs.io/en/release/) file as the input dataset.
 
 * `./train/main_NAIP_MoCo.py` and `./train/main_Sen2_MoCo.py` are utilized for training on the NAIP and Sen2 dataset with SauMoCo.
 
